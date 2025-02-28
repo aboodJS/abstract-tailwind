@@ -12,10 +12,10 @@
   </head>
   <body>
     <main class="h-fit overflow-x-hidden">
-      <nav class="bg-black w-screen h-12.5 flex items-center justify-between">
-        <div
-          class="text-white ml-16 text-xl flex items-center justify-between [&>*]:mx-2"
-        >
+      <nav
+        class="bg-black w-screen h-12.5 flex items-center justify-between relative"
+      >
+        <div class="text-white md:ml-16 text-xl flex items-center [&>*]:mx-2">
           <p
             class="font-bold cursor-pointer hover:text-slate-300 transition-colors"
           >
@@ -24,7 +24,7 @@
           <hr class="bg-white w-0.5 h-8" />
           <p class="hover:underline cursor-pointer">Help center</p>
         </div>
-        <div class="[&>*]:ml-4 mr-16">
+        <div class="[&>*]:ml-4 mr-16 max-md:hidden">
           <button
             class="text-white text-xl border px-3 bg-[#191a1b] py-2 rounded"
           >
@@ -35,15 +35,22 @@
             sign in
           </button>
         </div>
+        <i
+          class="md:hidden max-md:text-3xl md:text-[0px] md:w-0 md:h-0 bx bx-menu"
+          style="color: #fbf9f9"
+        ></i>
       </nav>
+
       <section
-        class="grid h-[26.5rem] w-screen bg-gray-300 justify-center content-center"
+        class="grid h-[26.5rem] w-screen bg-gray-300 justify-center content-center max-md:h-[22rem]"
       >
         <div class="text-center">
-          <h1 class="text-7xl pb-7">How can we help?</h1>
+          <h1 class="text-7xl pb-7 max-md:text-4xl max-md:pb-10">
+            How can we help?
+          </h1>
           <search class="relative"
             ><input
-              class="rounded py-5 px-4 border border-black shadow w-[720px] focus:border-blue-600 outline-none"
+              class="rounded py-5 px-4 border border-black shadow w-[720px] focus:border-blue-600 outline-none max-md:w-[90vw]"
               type="search"
               name=""
               id=""
@@ -55,7 +62,7 @@
         </div>
       </section>
       <section
-        class="h-[110vh] grid justify-center grid-cols-2 grid-rows-2 mb-48"
+        class="h-[110vh] grid justify-center grid-cols-2 grid-rows-2 mb-48 max-md:flex max-md:flex-col max-md:justify-around"
       >
         <div class="self-center justify-self-center">
           <span class="flex items-center">
@@ -157,7 +164,7 @@
       <footer
         class="h-[55vh] w-screen bg-black flex items-center justify-around"
       >
-        <div class="grid grid-rows-2 grid-cols-4 gap-x-10">
+        <div class="grid grid-rows-2 grid-cols-4 gap-x-10 max-md:grid-cols-2">
           <ul class="text-white">
             <h1 class="text-xl font-extrabold">Abstract</h1>
             <li class="hover:underline cursor-pointer">test text</li>
