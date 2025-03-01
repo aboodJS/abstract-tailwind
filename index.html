@@ -37,9 +37,18 @@
         </div>
         <i
           class="md:hidden max-md:text-3xl md:text-[0px] md:w-0 md:h-0 bx bx-menu"
+          id="menu-btn"
           style="color: #fbf9f9"
         ></i>
       </nav>
+      <div
+        class="absolute text-white bg-black md:hidden h-[25vh] z-10 w-screen grid justify-center content-center text-2xl overflow-y-hidden"
+        id="drop-menu"
+      >
+        <button class="">submit a request</button>
+        <hr class="my-4" />
+        <button>sign in</button>
+      </div>
 
       <section
         class="grid h-[26.5rem] w-screen bg-gray-300 justify-center content-center max-md:h-[22rem]"
@@ -206,5 +215,6 @@
         </div>
       </footer>
     </main>
+    <script src="main.js"></script>
   </body>
 </html>
