@@ -42,7 +42,7 @@
         ></i>
       </nav>
       <div
-        class="absolute top-10 text-white bg-black md:hidden max-md:h-[25vh] z-10 w-screen grid justify-center content-center text-2xl overflow-y-hidden"
+        class="absolute text-white bg-black md:hidden max-md:h-[25vh] z-10 w-screen grid justify-center content-center text-2xl overflow-y-hidden"
         id="drop-menu"
       >
         <button class="">submit a request</button>
@@ -71,7 +71,7 @@
         </div>
       </section>
       <section
-        class="h-[110vh] grid justify-center grid-cols-2 grid-rows-2 mb-48 max-md:flex max-md:flex-col max-md:justify-around"
+        class="h-[110vh] grid justify-center grid-cols-2 grid-rows-2 mb-20 max-md:flex max-md:flex-col max-md:justify-around"
       >
         <div class="self-center justify-self-center">
           <span class="flex items-center">
@@ -171,47 +171,49 @@
         </div>
       </section>
       <footer
-        class="h-[55vh] w-screen bg-black flex items-center justify-around"
+        class="h-[55vh] max-md:h-fit w-screen bg-black md:flex items-center justify-around"
       >
         <div
-          class="grid grid-rows-2 md:grid-cols-4 md:gap-x-10 max-md:grid-cols-2 max-md:w-screen"
+          class="grid md:grid-rows-2 max-md:grid-rows-3 md:grid-cols-4 md:gap-x-10 max-md:grid-cols-2 max-md:w-screen"
         >
-          <ul class="text-white max-md:col-span-1 max-md:row-span-1">
-            <h1 class="text-xl font-extrabold">Abstract</h1>
+          <ul class="text-white max-md:text-base">
+            <h1 class="text-xl max-md:text-base font-extrabold">Abstract</h1>
             <li class="hover:underline cursor-pointer">test text</li>
             <li class="hover:underline cursor-pointer">test text</li>
             <li class="hover:underline cursor-pointer">test text</li>
           </ul>
-          <ul class="text-white max-md:col-span-2 max-md:row-span-1">
-            <h1 class="text-xl font-extrabold">Resources</h1>
-            <li class="hover:underline cursor-pointer">test text</li>
-            <li class="hover:underline cursor-pointer">test text</li>
-            <li class="hover:underline cursor-pointer">test text</li>
-            <li class="hover:underline cursor-pointer">test text</li>
-          </ul>
-          <ul class="text-white max-md:col-span-1 max-md:row-span-2">
-            <h1 class="text-xl font-extrabold">Community</h1>
-            <li class="hover:underline cursor-pointer">test text</li>
+          <ul class="text-white max-md:text-base">
+            <h1 class="text-xl font-extrabold max-md:text-base">Resources</h1>
             <li class="hover:underline cursor-pointer">test text</li>
             <li class="hover:underline cursor-pointer">test text</li>
             <li class="hover:underline cursor-pointer">test text</li>
             <li class="hover:underline cursor-pointer">test text</li>
           </ul>
-          <ul class="text-white max-md:col-span-2 max-md:row-span-2">
-            <h1 class="text-xl font-extrabold">Company</h1>
+          <ul class="text-white max-md:text-base">
+            <h1 class="text-xl font-extrabold max-md:text-base">Community</h1>
+            <li class="hover:underline cursor-pointer">test text</li>
+            <li class="hover:underline cursor-pointer">test text</li>
+            <li class="hover:underline cursor-pointer">test text</li>
+            <li class="hover:underline cursor-pointer">test text</li>
+            <li class="hover:underline cursor-pointer">test text</li>
+          </ul>
+          <ul class="text-white max-md:text-base">
+            <h1 class="text-xl font-extrabold max-md:text-base">Company</h1>
             <li class="hover:underline cursor-pointer">test text</li>
             <li class="hover:underline cursor-pointer">test text</li>
             <li class="hover:underline cursor-pointer">test text</li>
           </ul>
           <ul
-            class="text-white md:col-start-4 max-md:col-span-2 max-md:row-span-2"
+            class="text-white md:col-start-4 max-md:row-span-3 max-md:col-start-2 max-md:text-base"
           >
-            <h1 class="text-xl font-extrabold">Contact us</h1>
+            <h1 class="text-xl font-extrabold max-md:text-base">Contact us</h1>
             <li class="hover:underline cursor-pointer">test text</li>
           </ul>
         </div>
-        <div class="flex items-end h-full mb-28">
-          <div class="text-white text-xl">
+        <div
+          class="flex items-end max-md:items-start max-md:-mt-10 h-full md:mb-28"
+        >
+          <div class="text-white text-xl max-md:text-base">
             <p>© Copyright 2024</p>
             <p>Abstract Studio Design, Inc.</p>
             <p>All rights reserved</p>
