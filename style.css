@@ -566,24 +566,104 @@ video {
   right: 1rem;
 }
 
-.top-10 {
-  top: 2.5rem;
-}
-
 .top-\[1\.2rem\] {
   top: 1.2rem;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.top-\[90\%\] {
+  top: 90%;
+}
+
+.top-\[120\%\] {
+  top: 120%;
+}
+
+.top-\[-120\%\] {
+  top: -120%;
+}
+
+.top-\[70\%\] {
+  top: 70%;
+}
+
+.top-\[80\%\] {
+  top: 80%;
+}
+
+.top-\[75\%\] {
+  top: 75%;
+}
+
+.-top-7 {
+  top: -1.75rem;
+}
+
+.-top-10 {
+  top: -2.5rem;
+}
+
+.-top-12 {
+  top: -3rem;
+}
+
+.-top-16 {
+  top: -4rem;
+}
+
+.-top-20 {
+  top: -5rem;
+}
+
+.-top-\[140px\] {
+  top: -140px;
+}
+
+.top-\[-16rem\] {
+  top: -16rem;
+}
+
+.top-\[-12rem\] {
+  top: -12rem;
+}
+
+.top-\[-10rem\] {
+  top: -10rem;
+}
+
+.top-\[-8rem\] {
+  top: -8rem;
+}
+
+.top-\[-7rem\] {
+  top: -7rem;
 }
 
 .z-10 {
   z-index: 10;
 }
 
-.col-span-2 {
-  grid-column: span 2 / span 2;
+.col-start-1 {
+  grid-column-start: 1;
 }
 
-.row-span-1 {
-  grid-row: span 1 / span 1;
+.col-end-1 {
+  grid-column-end: 1;
+}
+
+.row-span-6 {
+  grid-row: span 6 / span 6;
+}
+
+.row-span-3 {
+  grid-row: span 3 / span 3;
 }
 
 .my-4 {
@@ -591,12 +671,8 @@ video {
   margin-bottom: 1rem;
 }
 
-.mb-28 {
-  margin-bottom: 7rem;
-}
-
-.mb-48 {
-  margin-bottom: 12rem;
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
 .mr-16 {
@@ -607,20 +683,8 @@ video {
   margin-right: 1rem;
 }
 
-.mb-32 {
-  margin-bottom: 8rem;
-}
-
-.mb-24 {
-  margin-bottom: 6rem;
-}
-
-.-mb-20 {
-  margin-bottom: -5rem;
-}
-
-.mb-20 {
-  margin-bottom: 5rem;
+.-mt-20 {
+  margin-top: -5rem;
 }
 
 .flex {
@@ -660,6 +724,22 @@ video {
   height: 100%;
 }
 
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-1\/2 {
+  height: 50%;
+}
+
+.h-\[75vh\] {
+  height: 75vh;
+}
+
+.h-\[65vh\] {
+  height: 65vh;
+}
+
 .w-0\.5 {
   width: 0.125rem;
 }
@@ -670,6 +750,11 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .cursor-pointer {
@@ -694,6 +779,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -875,40 +964,20 @@ video {
 }
 
 @media not all and (min-width: 768px) {
-  .max-md\:col-span-1 {
-    grid-column: span 1 / span 1;
-  }
-
-  .max-md\:col-span-2 {
-    grid-column: span 2 / span 2;
-  }
-
   .max-md\:col-start-2 {
     grid-column-start: 2;
-  }
-
-  .max-md\:row-span-1 {
-    grid-row: span 1 / span 1;
-  }
-
-  .max-md\:row-span-2 {
-    grid-row: span 2 / span 2;
   }
 
   .max-md\:row-span-3 {
     grid-row: span 3 / span 3;
   }
 
-  .max-md\:mb-14 {
-    margin-bottom: 3.5rem;
-  }
-
-  .max-md\:-mt-12 {
-    margin-top: -3rem;
-  }
-
   .max-md\:-mt-10 {
     margin-top: -2.5rem;
+  }
+
+  .max-md\:-mt-0 {
+    margin-top: -0px;
   }
 
   .max-md\:flex {
@@ -932,16 +1001,13 @@ video {
     height: fit-content;
   }
 
-  .max-md\:h-\[75vh\] {
-    height: 75vh;
+  .max-md\:h-max {
+    height: -moz-max-content;
+    height: max-content;
   }
 
-  .max-md\:h-1\/2 {
-    height: 50%;
-  }
-
-  .max-md\:h-1\/3 {
-    height: 33.333333%;
+  .max-md\:h-\[85vh\] {
+    height: 85vh;
   }
 
   .max-md\:w-\[90vw\] {
@@ -954,14 +1020,6 @@ video {
 
   .max-md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .max-md\:grid-rows-6 {
-    grid-template-rows: repeat(6, minmax(0, 1fr));
-  }
-
-  .max-md\:grid-rows-4 {
-    grid-template-rows: repeat(4, minmax(0, 1fr));
   }
 
   .max-md\:grid-rows-3 {
@@ -982,18 +1040,6 @@ video {
 
   .max-md\:justify-around {
     justify-content: space-around;
-  }
-
-  .max-md\:justify-self-start {
-    justify-self: start;
-  }
-
-  .max-md\:justify-self-end {
-    justify-self: end;
-  }
-
-  .max-md\:justify-self-center {
-    justify-self: center;
   }
 
   .max-md\:pb-10 {
@@ -1021,23 +1067,17 @@ video {
   }
 }
 
-@media not all and (min-width: 640px) {
-  .max-sm\:hidden {
-    display: none;
-  }
-}
-
 @media (min-width: 768px) {
   .md\:col-start-4 {
     grid-column-start: 4;
   }
 
-  .md\:ml-16 {
-    margin-left: 4rem;
-  }
-
   .md\:mb-28 {
     margin-bottom: 7rem;
+  }
+
+  .md\:ml-16 {
+    margin-left: 4rem;
   }
 
   .md\:flex {
